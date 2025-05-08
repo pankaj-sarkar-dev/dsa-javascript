@@ -9,7 +9,7 @@ function reverse(x: number): number {
   while (x > 0) {
       const tail = x % 10;
       rev = rev * 10 + tail;
-      x = Math.floor(x/10);
+      x = Math.floor(x/10); // x / 10 | 0
   }
   return isNegative ? -rev : rev;
 };
